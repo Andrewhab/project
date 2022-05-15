@@ -1,0 +1,33 @@
+.hero {
+    padding-top: 68px;
+    padding-bottom: 122px;
+}
+
+.hero__content {
+    max-width: 597px;
+    color: var(--white);
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hero__text:last-of-type {
+    margin-bottom: 92px;
+}
+
+.hero__btn {
+    margin-right: 20px;
+}

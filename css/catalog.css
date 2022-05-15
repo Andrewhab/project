@@ -1,0 +1,157 @@
+.catalog {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.catalog__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.catalog__title {
+    margin-bottom: 0;
+    margin-right: 40px;
+}
+
+.catalog__countries {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.catalog__countries-item {
+    margin-right: 50px;
+}
+
+.catalog__countries-btn {
+    position: relative;
+    display: flex;
+    width: 46px;
+    height: 46px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow var(--short);
+}
+
+.catalog__countries-btn:hover,
+.catalog__countries-btn:focus {
+    box-shadow: 0 0 20px var(--violet-transparent-7);
+}
+
+.catalog__countries-btn:active::after {
+    opacity: 1;
+}
+
+.catalog__countries-btn::before,
+.catalog__countries-btn::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: inset 0 0 0 2px var(--violet-active);
+    transition: opacity var(--short);
+}
+
+.catalog__countries-btn::before {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+}
+
+.catalog__countries-btn::after {
+    width: 100%;
+    height: 100%;
+}
+
+.tab-active.catalog__countries-btn::before {
+    opacity: 1;
+}
+
+.catalog__country-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--gray);
+}
+
+.catalog__tab-content {
+    display: none;
+}
+
+.catalog__content-flex {
+    display: flex;
+    padding: 20px;
+}
+
+.catalog__card-img {
+    display: block;
+    margin-right: 25px;
+    outline-offset: 12px;
+    outline: 2px solid #B7B7B7;
+}
+
+.catalog__false-info {
+    flex-direction: column;
+    width: 38%;
+}
+
+.catalog__text.text {
+    margin-bottom: 39px;
+}
+
+.catalog__painter-image {
+    display: block;
+    margin-bottom: 29px;
+}
+
+.catalog__painter-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 9px;
+}
+
+.catalog__painter-years {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--midle-gray);
+}
+
+.catalog__tab-content.tab-active {
+    display: block;
+    animation-name: fade-in;
+    animation-duration: var(--midle);
+}
+
+.catalog__tab-content-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__painter-info-wrap {
+    width: calc(750 / 1600 * 100%);
+}
+
+.catalog__painter-info {
+    display: none;
+}
+
+.catalog__painter-info.tab-active {
+    display: block;
+    animation-name: fade-in;
+    animation-duration: var(--midle);
+}
+
+.catalog__painters {
+    width: calc(800 / 1600 * 100%);
+}

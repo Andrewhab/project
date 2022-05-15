@@ -1,0 +1,37 @@
+.project {
+    padding-bottom: 80px;
+}
+
+.project__tooltip {
+    background-color: inherit;
+    border: none;
+}
+
+.project__tooltip:hover svg {
+    fill: var(--violet-ultra-hover);
+}
+
+.project__tooltip:focus svg {
+    outline: none;
+    fill: var(--violet-ultra-hover);
+}
+
+.project__tooltip:active svg path {
+    border: none;
+    stroke: var(--white);
+    fill: var(--violet-midle);
+}
+
+.tippy-content {
+    padding: 8px 11px 13px;
+    background-color: var(--violet-midle);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.tippy-box[data-placement^=top]>.tippy-arrow:before {
+    border-top-color: var(--violet-midle);
+}

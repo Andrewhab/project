@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    padding-top: 47px;
+    padding-bottom: 48px;
+    background-color: #000000;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__item {
+    display: flex;
+}
+
+.footer__list {
+    width: 45px;
+    height: 45px;
+    transform: translate(-2px, -2px);
+}
+
+.footer__list:not(:last-child) {
+    margin-right: 19px;
+}
