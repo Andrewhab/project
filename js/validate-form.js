@@ -1,32 +1,30 @@
-(() => {
-    let selector = document.querySelector("input[type='tel']");
-    let im = new Inputmask("+7(999)-999-99-99");
+var selector = document.querySelector("input[type='tel']");
+var im = new Inputmask("+7 (999)-999-99-99");
 
-    im.mask(selector);
+im.mask(selector);
 
-    new JustValidate('.contacts-form', {
-        rules: {
-            name: {
-                required: true,
-                minLength: 2,
-                maxLength: 30
-            },
-            tel: {
-                required: true,
-                function: (name, value) => {
-                    const phone = selector.inputmask.unmaskedvalue();
-                    return Number(phone) && phone.length === 10;
-                }
+new JustValidate(".contacts-form", {
+    rules: {
+        name: {
+            required: true,
+            minLength: 2,
+            maxLength: 10
+        },
+        tel: {
+            required: true,
+            function: (name, value) => {
+                const phone = selector.input.unmaskedvalue()
+                return Number(phone) && phone.length === 10
             }
         },
-        colorWrong: '#FF5C00',
-        messages: {
-            name: {
-                required: 'Введите Ваше имя'
-            },
-            tel: {
-                required: 'Введите Ваш номер телефона'
-            }
-        }
-    });
-})();
+    },
+    colorWrong: '#D11616',
+    messages: {
+        name: {
+            required: 'Как вас зовут?',
+        },
+        tel: {
+            required: 'Укажите ваш телефон'
+        },
+    },
+});

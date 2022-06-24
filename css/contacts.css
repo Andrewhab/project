@@ -1,4 +1,5 @@
 .contacts {
+    padding-top: 40px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -22,6 +23,7 @@
     padding-top: 122px;
     padding-bottom: 23px;
     padding-right: 122px;
+    margin-left: 50px;
     align-items: center;
     border-right: 1px solid var(--light-midle-gray);
 }
@@ -30,8 +32,8 @@
     max-width: 402px;
 }
 
-.contacts-content__title-mobile,
-.contacts-content__address-mobile {
+.contacts__title-mobile,
+.contacts__address-mobile {
     display: none;
 }
 
@@ -44,7 +46,7 @@
 }
 
 .contacts-content__address {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -52,18 +54,20 @@
 }
 
 .contacts-content__descr {
-    margin-bottom: 16px;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     color: var(--dark);
 }
 
+.contacts-content__descr--bottom {
+    margin-bottom: 14px;
+}
+
 .contacts-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 185px;
     margin-bottom: 38px;
 }
 
@@ -74,7 +78,17 @@
 }
 
 .contacts-form__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--validate);
     opacity: 0;
+}
+
+.js-validate-error-label {
+    padding-left: 20px;
+    order: -1;
+    position: absolute;
 }
 
 .contacts-form__group:nth-last-child() {
@@ -82,8 +96,10 @@
 }
 
 .contacts-form__input {
-    width: 400px;
+    max-width: 400px;
     height: 40px;
+    margin-top: 10px;
+    margin-bottom: 7px;
     padding-left: 24px;
     outline: none;
     border: 1px solid var(--dark);
@@ -91,8 +107,17 @@
     transition: .3s ease-in-out;
 }
 
+.contacts-form__input:hover {
+    background-color: var(--light-gray);
+}
+
+.contacts-form__input:focus {
+    background-color: var(--light-gray);
+}
+
 .contacts-form__btn {
     position: relative;
+    margin-top: 15px;
     width: 157px;
     padding: 15px 34px;
     font-weight: 700;
@@ -134,11 +159,16 @@
     margin-right: 18px;
 }
 
+.contacts-content__social-link {
+    transition: .3s ease-in-out;
+}
+
 .contacts-content__social-link:hover {
     opacity: 0.5;
 }
 
 .contacts-content__social-link:focus {
+    outline: none;
     opacity: 0.5;
 }
 
@@ -148,12 +178,21 @@
 }
 
 .contacts-content__rt {
-    width: calc(100% + 1px);
+    position: relative;
+    min-height: 300px;
+    width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2));
+    /* 1078 - в данном случае это ширина карты внутри контейнера, её можно менять */
+    margin-right: calc((-100vw + 100%) / 2);
+    transition-property: width, height, padding;
+    transition-duration: 100ms;
 }
 
 .map {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 [class*=ground-pane] {

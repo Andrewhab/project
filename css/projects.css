@@ -1,5 +1,6 @@
 .project {
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .project__tooltip {
@@ -9,6 +10,10 @@
 
 .project__tooltip:hover svg {
     fill: var(--violet-ultra-hover);
+}
+
+.project__tooltip:focus {
+    outline: none;
 }
 
 .project__tooltip:focus svg {

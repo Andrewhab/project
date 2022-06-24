@@ -75,7 +75,7 @@
 
 @media (max-width: 610px) {
     .partners-slider__slider {
-        width: calc(195 / 290 * 100%);
+        width: calc(195 / 285 * 100%);
     }
     .partners-slider__slide {
         height: 65px;

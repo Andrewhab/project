@@ -1,169 +1,170 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSansRegular.woff2') format('woff2'), url('../fonts/OpenSansRegular.woff') format('woff');
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSansRegular.woff2') format('woff2'), url('../fonts/OpenSansRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSansItalic.woff2') format('woff2'), url('../fonts/OpenSansItalic.woff') format('woff');
-  font-display: swap;
-  font-weight: 400;
-  font-style: italic;
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSansItalic.woff2') format('woff2'), url('../fonts/OpenSansItalic.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSansSemiBold.woff2') format('woff2'), url('../fonts/OpenSansSemiBold.woff') format('woff');
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSansSemiBold.woff2') format('woff2'), url('../fonts/OpenSansSemiBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSansBold.woff2') format('woff2'), url('../fonts/OpenSansBold.woff') format('woff');
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSansBold.woff2') format('woff2'), url('../fonts/OpenSansBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
 }
 
 :root {
-  /* colors */
-  --black: #000000;
-  --white: #FFFFFF;
-  --white-transparent-2: rgba(255, 255, 255, 0.2);
-  --dark: #333333;
-  --dark-light: #585858;
-  --violet-hover: #C283F3;
-  --violet-ultra-hover: #D1A9F0;
-  --violet-active: #7943A4;
-  --violet-midle: #9D5CD0;
-  --violet-transparent-7: rgba(157, 92, 208, 0.7);
-  --transparent-dark-4: rgba(0, 0, 0, 0.4);
-  --transparent-dark-5: rgba(0, 0, 0, 0.5);
-  --transparent-dark-6: rgba(0, 0, 0, 0.6);
-  --transparent-dark-9: rgba(0, 0, 0, 0.9);
-  --transparent-rose: rgba(194, 131, 243, 0.4);
-  --background-helper: gray;
-  --dark-gray: #666666;
-  --light-gray: #ECECEC;
-  --dark-gray-05: rgba(102, 102, 102, 0.5);
-  --midle-gray: #999999;
-  --light-midle-gray: #CACACA;
-  --disabled-gray: #BBBBBB;
-  /* sizes */
-  --container-max: 1700px;
-  --container-padding: 50px;
-  --burger-line: 3px;
-  /* transitions */
-  --short: .3s;
-  --midle: .5s;
+    /* colors */
+    --black: #000000;
+    --white: #FFFFFF;
+    --white-transparent-2: rgba(255, 255, 255, 0.2);
+    --dark: #333333;
+    --dark-light: #585858;
+    --violet-hover: #C283F3;
+    --violet-ultra-hover: #D1A9F0;
+    --violet-active: #7943A4;
+    --violet-midle: #9D5CD0;
+    --violet-transparent-7: rgba(157, 92, 208, 0.7);
+    --transparent-dark-4: rgba(0, 0, 0, 0.4);
+    --transparent-dark-5: rgba(0, 0, 0, 0.5);
+    --transparent-dark-6: rgba(0, 0, 0, 0.6);
+    --transparent-dark-9: rgba(0, 0, 0, 0.9);
+    --transparent-rose: rgba(194, 131, 243, 0.4);
+    --background-helper: gray;
+    --dark-gray: #666666;
+    --light-gray: #ECECEC;
+    --dark-gray-05: rgba(102, 102, 102, 0.5);
+    --midle-gray: #999999;
+    --light-midle-gray: #CACACA;
+    --disabled-gray: #BBBBBB;
+    --validate: #D11616;
+    /* sizes */
+    --container-max: 1700px;
+    --container-padding: 50px;
+    --burger-line: 3px;
+    /* transitions */
+    --short: .3s;
+    --midle: .5s;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 body {
-  min-width: 320px;
-  font-family: 'OpenSans', 'sans-serif';
-  font-size: 16px;
-  line-height: 2;
+    min-width: 320px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    line-height: 2;
 }
 
 img,
 svg {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .btn-reset {
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: transparent;
 }
 
 .reset-list {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
 .container {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+    max-width: var(--container-max);
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
 }
 
 .section-title,
 .text {
-  max-width: 1080px;
+    max-width: 1080px;
 }
 
 .section-title {
-  margin-top: 0;
-  margin-bottom: 17px;
-  font-size: 48px;
-  line-height: 65px;
-  font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 400;
 }
 
 .text {
-  margin-top: 0;
-  margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .text:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .text--semi-bold {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .btn {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
 }

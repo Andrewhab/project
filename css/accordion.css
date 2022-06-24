@@ -1,5 +1,3 @@
-.accordion {}
-
 .accordion__question:first-child .accordion__heading {
     border-top: 1px solid var(--light-midle-gray);
 }
@@ -120,7 +118,7 @@
 
 .is-active .accordion__content {
     visibility: visible;
-    border-color: var(--light-middle-gray);
+    border-color: var(--violet-midle);
 }
 
 .accordion__content-wrap {

@@ -1,6 +1,6 @@
 .catalog {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 .catalog__top {
@@ -12,7 +12,7 @@
 
 .catalog__title {
     margin-bottom: 0;
-    margin-right: 40px;
+    margin-right: 43px;
 }
 
 .catalog__countries {
@@ -22,6 +22,7 @@
 }
 
 .catalog__countries-item {
+    padding-top: 21px;
     margin-right: 50px;
 }
 

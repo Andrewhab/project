@@ -19,8 +19,22 @@
     width: 45px;
     height: 45px;
     transform: translate(-2px, -2px);
+    transition: .3s ease-in-out;
 }
 
 .footer__list:not(:last-child) {
     margin-right: 19px;
+}
+
+.footer__list:hover path {
+    fill: var(--white);
+}
+
+.footer__list:active path {
+    fill: var(--violet-midle);
+}
+
+.footer__svg:focus:not(:active):not(:hover) {
+    outline: none;
+    fill: var(--white);
 }

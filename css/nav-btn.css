@@ -10,7 +10,7 @@
     transition: background-color var(--short), box-shadow var(--short);
 }
 
-.nav-btn:hover:not(.nav-btn--disabled) {
+.nav-btn:hover:not(.nav-btn--disabled, .swiper-button-disabled) {
     background-color: var(--violet-midle);
 }
 
@@ -19,11 +19,12 @@
     box-shadow: inset 0 0 0 2px var(--black);
 }
 
-.nav-btn:active {
+.nav-btn:active:not(.nav-btn--disabled, .swiper-button-disabled) {
     background-color: var(--violet-active);
 }
 
-.nav-btn--disabled {
+.nav-btn--disabled,
+.swiper-button-disabled {
     background-color: var(--dark-gray-05);
 }
 
@@ -39,7 +40,7 @@
     box-shadow: inset 0 0 0 2px var(--violet-midle);
 }
 
-.nav-btn--light:active {
+.nav-btn--light:active:not(.nav-btn--disabled) {
     background-color: var(--violet-ultra-hover);
     box-shadow: inset 0 0 0 2px var(--violet-midle);
 }

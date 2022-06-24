@@ -6,6 +6,10 @@
     line-height: 1;
 }
 
+.filter-choices__inner:hover {
+    background-color: var(--white-transparent-2);
+}
+
 .filter-choices:focus {
     outline: none;
 }

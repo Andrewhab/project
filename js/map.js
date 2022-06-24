@@ -92,7 +92,7 @@
         const widthDesktop = window.matchMedia('(min-width: 1920px)');
         const widthSmallDesktop = window.matchMedia('(max-width: 1024px)');
         const widthTablet = window.matchMedia('(max-width: 970px)');
-        const widthBigMobile = window.matchMedia('(max-width: 768px)');
+        const widthBigMobile = window.matchMedia('(max-width: 730px)');
         const widthMobile = window.matchMedia('(max-width: 410px)');
 
         widthMobile.addEventListener('change', e => {

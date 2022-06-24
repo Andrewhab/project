@@ -1,4 +1,5 @@
 .events {
+    padding-top: 40px;
     padding-bottom: 77px;
 }
 
@@ -18,10 +19,8 @@
 
 .events__item {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     box-sizing: border-box;
-    height: auto;
     width: calc((100% - 100px) / 3);
 }
 
@@ -301,6 +300,9 @@
         width: 10px;
         height: 10px;
         border-radius: 100%;
+    }
+    .swiper-pagination-bullet-active-custom {
+        background-color: var(--dark-gray);
     }
     .all-events-btn {
         display: none;
