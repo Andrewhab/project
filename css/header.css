@@ -10,7 +10,7 @@
     position: relative;
     z-index: 1;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
     background-color: var(--black);
 }
 
@@ -61,7 +61,7 @@
 }
 
 .header__nav-item {
-    margin-right: 62px;
+    margin-right: 63px;
 }
 
 .header__nav-link {
@@ -209,7 +209,7 @@
     display: inline-block;
     width: 8px;
     height: 8px;
-    margin-left: 4px;
+    margin-left: 1px;
     border-right: 1px solid;
     border-bottom: 1px solid;
     transform: translate(4px, calc(-50% + 1px)) rotate(45deg);

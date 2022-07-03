@@ -17,6 +17,7 @@
     text-align: left;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
     transition: color var(--short) ease, border-color var(--short) ease;
 }
 

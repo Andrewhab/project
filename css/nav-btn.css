@@ -56,19 +56,27 @@
 }
 
 .nav-btn--next::before {
-    left: calc(50% - 7px / 2);
+    left: calc(50% - 10px / 2);
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
 }
 
 .nav-btn--prev::before {
-    left: calc(50% - 7px / 2);
+    left: calc(50% - 5px / 2);
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
 
 .nav-btn--light::before {
     border-color: var(--black);
+}
+
+.nav-btn--disabled {
+    cursor: auto;
+}
+
+.swiper-button-disabled {
+    cursor: auto;
 }
 
 .nav-btn--disabled.nav-btn--light::before {

@@ -13,9 +13,9 @@
     position: absolute;
     left: -6px;
     right: -6px;
-    top: -6px;
-    bottom: -6px;
-    background-color: var(--violet-active);
+    top: -2px;
+    bottom: -2px;
+    background-color: var(--violet-midle);
     transform: scaleX(0);
     transition: transform var(--short);
 }

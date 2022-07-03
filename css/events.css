@@ -1,10 +1,10 @@
 .events {
     padding-top: 40px;
-    padding-bottom: 77px;
+    padding-bottom: 78px;
 }
 
 .events__title {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 48px;
     line-height: 65px;
@@ -14,7 +14,7 @@
 .events__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
 }
 
 .events__item {
@@ -53,7 +53,7 @@
     flex-grow: 1;
     position: relative;
     min-height: 400px;
-    padding: 17px 50px 50px;
+    padding: 16px 22px 37px 50px;
     border: 1px solid var(--light-midle-gray);
     border-top: none;
 }

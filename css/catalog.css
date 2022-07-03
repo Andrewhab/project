@@ -7,12 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .catalog__title {
     margin-bottom: 0;
-    margin-right: 43px;
+    margin-right: 40px;
 }
 
 .catalog__countries {
@@ -22,7 +22,7 @@
 }
 
 .catalog__countries-item {
-    padding-top: 21px;
+    padding-top: 8px;
     margin-right: 50px;
 }
 

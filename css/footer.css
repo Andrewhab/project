@@ -19,22 +19,27 @@
     width: 45px;
     height: 45px;
     transform: translate(-2px, -2px);
-    transition: .3s ease-in-out;
 }
 
 .footer__list:not(:last-child) {
     margin-right: 19px;
 }
 
+.footer__link {
+    display: flex;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
 .footer__list:hover path {
     fill: var(--white);
 }
 
-.footer__list:active path {
-    fill: var(--violet-midle);
-}
-
-.footer__svg:focus:not(:active):not(:hover) {
+.footer__link:focus path {
     outline: none;
     fill: var(--white);
+}
+
+.footer__link:active path {
+    fill: var(--violet-midle);
 }
