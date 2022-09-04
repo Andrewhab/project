@@ -5,6 +5,10 @@
     .header__bottom-item {
         margin-right: 55px;
     }
+    .contacts-content__lf {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -351,6 +355,7 @@
         width: calc(530 / 948 * 100%);
         padding-right: 43px;
         padding-left: 51px;
+        padding-bottom: 121px;
     }
     .contacts__title {
         margin-bottom: 16px;
